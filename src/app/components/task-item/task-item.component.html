@@ -1,1 +1,8 @@
-<p>task-item works!</p>
+<li class="px-4 flex justify-between text-center h-8 hover:bg-gray-100 border border-b border-gray-100">
+    <p class="w-1/6 font-medium truncate text-sm leading-6">{{task.status}}</p>
+    <p class="w-2/6 font-medium truncate text-sm leading-6">
+        {{task.title}}
+  </p>
+  <p class="w-1/6 font-medium truncate text-sm leading-6">{{task.user}}</p>
+  <p class="w-1/6 font-medium truncate text-sm leading-6">{{task.modified}}</p>
+</li>

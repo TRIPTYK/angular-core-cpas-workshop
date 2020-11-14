@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   tasks = [
-    { title: 'Machine setup', last_modified: '12/11/2020' },
-    { title: 'Backup setup', last_modified: '12/11/2020' },
-    { title: 'Project follow setup', last_modified: '15/11/2020' },
-    { title: 'Project tasks dev ', last_modified: '15/11/2020' },
+    { status:'done',user:'gilles',title: 'Machine setup', description:'descrition très longue' ,modified: '12/11/2020' },
+    { status:'done',user:'gilles',title: 'Machine setup', description:'descrition très longue' ,modified: '13/11/2020' },
+    { status:'done',user:'gilles',title: 'Machine setup', description:'descrition très longue' ,modified: '14/11/2020' },
+    { status:'done',user:'gilles',title: 'Machine setup', description:'descrition très longue' ,modified: '15/11/2020' },
   ];
   constructor() {}
 
