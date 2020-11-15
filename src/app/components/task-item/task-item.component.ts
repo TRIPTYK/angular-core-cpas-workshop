@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import Task from 'src/app/shared/interfaces/Task';
 
 @Component({
@@ -7,13 +7,18 @@ import Task from 'src/app/shared/interfaces/Task';
   styleUrls: ['./task-item.component.css'],
 })
 export class TaskItemComponent implements OnInit {
-  @Input() task: Task  =  {
+  @Input() task: Task = {
     status: 'done',
     user: 'unknown',
     title: 'test task',
     description: 'description',
-    modified: '00/00/00'
+    modified: '00/00/00',
   };
+  @Output() selectTaskEvent: EventEmitter<Task> = new EventEmitter();
+
+  clickHandler(): void {
+    this.selectTaskEvent.emit(this.task);
+  }
   constructor() {}
 
   ngOnInit(): void {}
