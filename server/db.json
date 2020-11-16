@@ -1,0 +1,26 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Machine setup",
+      "descirption": "Set up the testing server for unit testing our application",
+      "userId": 1,
+      "last_modified": "12/11/2020",
+      "status": "todo"
+    },
+    {
+      "id": 2,
+      "title": "backup setup",
+      "descirption": "Set up the backup server",
+      "userId": 1,
+      "last_modified": "12/11/2020",
+      "status": "done"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "gilles@triptyk.eu"
+    }
+  ]
+}
